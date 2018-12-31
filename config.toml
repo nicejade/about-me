@@ -1,0 +1,85 @@
+languageCode = "zh"
+title = "晚晴幽草轩轩主"
+baseurl = "https://aboutme.jeffjade.com/"
+theme = "aerial"
+
+[params]
+  name = "晚晴幽草轩轩主"
+  description = "杨轩帅，字琼璞；晚晴幽草轩轩主，天意人间舫舫主，静晴轩别苑博主，倾城之链作者。"
+  about = "It's only too late if you decide it is. Get busy living. or get busy dying!"
+  copyright = "nicejade"
+  #Disable the scrolling background by entering any string for bg_scroll. Enable by leaving bg_scroll empty.
+  bg_scroll = ""
+  favicon = "favicon.ico"
+
+[[params.social]]
+  medium = "NICELINKS"
+  icon = "chrome"
+  link = "https://nicelinks.site?utm_source=about-me"
+  prefix = "fab"
+
+[[params.social]]
+  medium = "Github"
+  icon = "github"
+  link = "https://github.com/nicejade"
+  prefix = "fab"
+
+[[params.social]]
+  medium = "Blog"
+  icon = "blogger"
+  link = "https://www.jeffjade.com/"
+  prefix = "fab"
+
+[[params.social]]
+  medium = "微博"
+  icon = "weibo"
+  link = "https://weibo.com/jeffjade"
+  prefix = "fab"
+
+[[params.social]]
+  medium = "微信"
+  icon = "weixin"
+  link = "https://www.jeffjade.com/nicelinks/#大前端联盟"
+  prefix = "fab"
+
+[[params.social]]
+  medium = "知乎"
+  icon = "zhihu"
+  link = "https://www.zhihu.com/people/yang-qiong-pu"
+  prefix = "fab"
+
+[[params.social]]
+  medium = "微博"
+  icon = "weibo"
+  link = "https://weibo.com/jeffjade"
+  prefix = "fab"
+
+[[params.social]]
+  medium = "Twitter"
+  icon = "twitter"
+  link = "https://twitter.com/nicejadeyang"
+  prefix = "fab"
+
+[[params.social]]
+  medium = "Facebook"
+  icon = "facebook-f"
+  link = "https://www.facebook.com/nice.jade.yang"
+  prefix = "fab"
+
+[[params.social]]
+  medium = "Instagram"
+  icon = "instagram"
+  link = "https://www.instagram.com/jeffjade2/"
+  prefix = "fab"
+
+[[params.social]]
+  medium = "Dribbble"
+  icon = "dribbble"
+  link = "https://dribbble.com/nicejade"
+  prefix = "fab"
+
+[[params.social]]
+  medium = "Email"
+  icon = "envelope"
+  link = "yunjeff@163.com"
+  prefix = "fas"
