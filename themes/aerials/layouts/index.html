@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>{{ .Title }}</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="theme-color" content="#f2f2f2">
+	<meta name="description" content="{{ .Site.Params.description }}" />
+	<meta name="twitter:description" content="{{ .Site.Params.sescription }}" />
+	<!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+	<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+	{{ with .Site.Params.favicon }}
+	<link rel="shortcut icon" type="image/x-icon" href="{{ . | absURL }}">
+	<link rel="icon" type="image/x-icon" href="{{ . | absURL }}">
+	{{ end }}
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.googleAnalytics }}"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', "{{ .Site.Params.googleAnalytics }}");
+	</script>
+</head>
+
+<body class="loading">
+	<div id="wrapper">
+		<div id="bg" {{ with .Site.Params.bg_scroll}} class="no-scroll" {{end}}></div>
+		<div id="overlay"></div>
+		<div id="main">
+			<!-- Header -->
+			<header id="header">
+				<h1>{{ .Site.Params.name | safeHTML }}</h1>
+				<p>{{ .Site.Params.about | safeHTML }}</p>
+				<nav>
+					<ul>
+						{{ range .Site.Params.social }}
+						<li>
+							<a href="{{ .link | safeURL }}" rel="noopener"
+								class="{{ .prefix }} fa-{{ .icon }}">
+								<span class="label">{{ .medium }}</span>
+							</a>
+						</li>
+						{{ end }}
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<span class="copyright">&copy; {{ .Site.Params.copyright }}. Design: <a href="https://www.jeffjade.com/">晚晴幽草轩</a>.
+					Powered by <a href="https://www.gohugo.io/">Hugo.</a></span>
+			</footer>
+		</div>
+	</div>
+	<!--[if lte IE 8]><script src="js/ie/respond.min.js"></script><![endif]-->
+	<script>
+		window.onload = function () { document.body.className = ''; }
+		window.ontouchmove = function () { return false; }
+		window.onorientationchange = function () { document.body.scrollTop = 0; }
+	</script>
+
+	{{ partial "js.html" . }}
+</body>
+
+</html>
