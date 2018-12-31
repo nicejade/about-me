@@ -6,7 +6,8 @@ theme = "aerial"
 [params]
   name = "晚晴幽草轩轩主"
   description = "杨轩帅，字琼璞；晚晴幽草轩轩主，天意人间舫舫主，静晴轩别苑博主，倾城之链作者。"
-  about = "It's only too late if you decide it is. Get busy living. or get busy dying!"
+  about = "I am a web developer, writer, and designer currently living in shenzhen. My interests range from arts to technology. <br/>I am also interested in reading, writing, and web development. <br/> You can click the button above to visit my website."
+  googleAnalytics = "UA-86109050-4"
   copyright = "nicejade"
   #Disable the scrolling background by entering any string for bg_scroll. Enable by leaving bg_scroll empty.
   bg_scroll = ""
@@ -25,9 +26,15 @@ theme = "aerial"
   prefix = "fab"
 
 [[params.social]]
-  medium = "Blog"
+  medium = "晚晴幽草轩"
   icon = "blogger"
   link = "https://www.jeffjade.com/"
+  prefix = "fab"
+
+[[params.social]]
+  medium = "静晴轩别苑"
+  icon = "blogger-b"
+  link = "https://nice.lovejade.cn/"
   prefix = "fab"
 
 [[params.social]]
@@ -77,9 +84,3 @@ theme = "aerial"
   icon = "dribbble"
   link = "https://dribbble.com/nicejade"
   prefix = "fab"
-
-[[params.social]]
-  medium = "Email"
-  icon = "envelope"
-  link = "yunjeff@163.com"
-  prefix = "fas"
