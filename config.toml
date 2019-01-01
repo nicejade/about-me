@@ -56,9 +56,9 @@ theme = "aerial"
   prefix = "fab"
 
 [[params.social]]
-  medium = "微博"
-  icon = "weibo"
-  link = "https://weibo.com/jeffjade"
+  medium = "DigitalOcean"
+  icon = "digital-ocean"
+  link = "https://m.do.co/c/046a8e6b255c"
   prefix = "fab"
 
 [[params.social]]
