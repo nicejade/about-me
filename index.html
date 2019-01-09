@@ -138,6 +138,21 @@
 		</div>
 	</div>
 	
+	<script src="js/quicklink.umd-1.0.0.js"></script>
+	<script>
+		quicklink({
+			origins: [
+				'nicelinks.site',
+				'www.jeffjade.com',
+				'nice.lovejade.cn',
+				'github.com'
+			],
+			ignores: [
+        uri => uri.includes('#')
+    	]
+		})
+		</script>
+	
 	<script>
 		window.onload = function () { document.body.className = ''; }
 		window.ontouchmove = function () { return false; }
