@@ -22,12 +22,19 @@ cd about-me
 hugo server
 ```
 
-修改 `deploy.sh` 文件中的“自定义域名”以及“仓库路径”，运行如下命令，即可实现部署（默认发布至 `github pages`；如果暂不使用自定义域名，注释该行即可。
+修改 `config.toml` 下配置便可，具体得配置可以参见 [Configure Hugo
+](https://gohugo.io/getting-started/configuration/)；当然你可以自定义更多的变量，在 *themes/aerial/layouts/index.html* 中做下同步即可。
 
 ```bash
 # 🚀 deploy to github-page (chmod +x deploy.sh)
 ./deploy.sh
 ```
+
+修改 `deploy.sh` 文件中的“自定义域名”以及“仓库路径”，运行如下命令，即可实现部署（默认发布至 `github pages`；如果暂不使用自定义域名，注释该行即可。
+
+## 额外优化
+
+- 注入 [quicklink](https://github.com/GoogleChromeLabs/quicklink): 通过在空闲时间预取视口内链接，提升后续页面加载速度（你需要手动修改中 *themes/aerial/layouts/index.html* 文件中 `origins` 字段，以指定预取 URL 的域名来源）。
 
 ## 相关链接
 
@@ -42,7 +49,7 @@ hugo server
 - [简书主页](https://www.jianshu.com/u/9aae3d8f4c3d)
 - [SegmentFault](https://segmentfault.com/u/jeffjade)
 - [Twitter](https://twitter.com/nicejadeyang)
-- [Facebook](https://www.facebook.com/yang.gang.jade)
+- [Facebook](https://www.facebook.com/nice.jade.yang)
 
 | 微信公众号 | 前端微信群 | 推荐 Web 应用 |
 | --- | --- | --- |
