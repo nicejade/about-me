@@ -1,6 +1,6 @@
 languageCode = "zh"
 title = "晚晴幽草轩轩主"
-baseurl = "https://aboutme.jeffjade.com/"
+baseurl = "https://aboutme.lovejade.cn/"
 theme = "aerial"
 
 [params]
@@ -9,6 +9,8 @@ theme = "aerial"
   about = "I am a web developer, writer, and designer currently living in shenzhen. My interests range from arts to technology. <br/>I am also interested in reading, writing, and web development. <br/> You can click the button above to visit my website."
   googleAnalytics = "UA-86109050-4"
   copyright = "nicejade"
+  designerName = "晚晴幽草轩"
+  designerPath = "https://www.jeffjade.com/"
   #Disable the scrolling background by entering any string for bg_scroll. Enable by leaving bg_scroll empty.
   bg_scroll = ""
   favicon = "favicon.ico"

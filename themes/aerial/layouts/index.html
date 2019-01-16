@@ -54,11 +54,27 @@
 
 			<!-- Footer -->
 			<footer id="footer">
-				<span class="copyright">&copy; {{ .Site.Params.copyright }}. Design: <a href="https://www.jeffjade.com/">晚晴幽草轩</a>.
+				<span class="copyright">&copy; {{ .Site.Params.copyright }}. 
+					Designed By: <a href="{{ .Site.Params.designerPath }}">{{ .Site.Params.designerName }}</a>.
 					Powered by <a href="https://www.gohugo.io/">Hugo.</a></span>
 			</footer>
 		</div>
 	</div>
+	<!-- Include quicklink from dist -->
+	<script src="js/quicklink.umd-1.0.0.js"></script>
+	<script>
+		quicklink({
+			origins: [
+				'nicelinks.site',
+				'www.jeffjade.com',
+				'nice.lovejade.cn',
+				'github.com'
+			],
+			ignores: [
+        uri => uri.includes('#')
+    	]
+		})
+		</script>
 	<!--[if lte IE 8]><script src="js/ie/respond.min.js"></script><![endif]-->
 	<script>
 		window.onload = function () { document.body.className = ''; }
