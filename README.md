@@ -23,7 +23,7 @@ hugo server
 ```
 
 修改 `config.toml` 下配置便可，具体得配置可以参见 [Configure Hugo
-](https://gohugo.io/getting-started/configuration/)；当然你可以自定义更多的变量，在 *themes/aerial/layouts/index.html* 中做下同步即可。
+](https://gohugo.io/getting-started/configuration/)；当然你可以自定义更多的变量，在主题目录下 layouts/index.html 中做下同步即可（你也可以自行选取其他[Hugo 主题](https://themes.gohugo.io/)）。
 
 ```bash
 # 🚀 deploy to github-page (chmod +x deploy.sh)
@@ -34,7 +34,7 @@ hugo server
 
 ## 额外优化
 
-- 注入 [quicklink](https://github.com/GoogleChromeLabs/quicklink): 通过在空闲时间预取视口内链接，提升后续页面加载速度（你需要手动修改中 *themes/aerial/layouts/index.html* 文件中 `origins` 字段，以指定预取 URL 的域名来源）。
+- 注入 [quicklink](https://github.com/GoogleChromeLabs/quicklink): 通过在空闲时间预取视口内链接，提升后续页面加载速度（你需要手动修改主题下 layouts/index.html 文件中 `origins` 字段，以指定预取 URL 的域名来源）。
 
 ## 相关链接
 
