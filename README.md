@@ -32,9 +32,10 @@ hugo server
 
 修改 `deploy.sh` 文件中的“自定义域名”以及“仓库路径”，运行如下命令，即可实现部署（默认发布至 `github pages`；如果暂不使用自定义域名，注释该行即可。
 
-## 额外优化
+## 其他优化
 
-- 注入 [quicklink](https://github.com/GoogleChromeLabs/quicklink): 通过在空闲时间预取视口内链接，提升后续页面加载速度（你需要手动修改主题下 layouts/index.html 文件中 `origins` 字段，以指定预取 URL 的域名来源）。
+- **更新 Font Awesome**：你可以在 [Font Awesome](https://fontawesome.com/) 中找寻中意的 Icon，填入 config.toml 中对应 icon 字段即可。
+- **注入 [quicklink](https://github.com/GoogleChromeLabs/quicklink)**: 通过在空闲时间预取视口内链接，提升后续页面加载速度（你需要手动修改主题下 layouts/index.html 文件中 `origins` 字段，以指定预取 URL 的域名来源）。
 
 ## 相关链接
 
