@@ -18,25 +18,31 @@ theme = "aerial"
 [[params.social]]
   medium = "NICELINKS"
   icon = "chrome"
-  link = "https://nicelinks.site?utm_source=about-me"
+  link = "https://nicelinks.site?utm_source=aboutme.lovejade.cn"
+  prefix = "fab"
+
+[[params.social]]
+  medium = "Arya - 在线 Markdown 编辑器"
+  icon = "pied-piper"
+  link = "https://markdown.lovejade.cn/?utm_source=aboutme.lovejade.cn"
+  prefix = "fab"
+
+[[params.social]]
+  medium = "晚晴幽草轩"
+  icon = "blogger"
+  link = "https://www.jeffjade.com/?utm_source=aboutme.lovejade.cn"
+  prefix = "fab"
+
+[[params.social]]
+  medium = "静轩之别苑"
+  icon = "blogger-b"
+  link = "https://quickapp.lovejade.cn/?utm_source=aboutme.lovejade.cn"
   prefix = "fab"
 
 [[params.social]]
   medium = "Github"
   icon = "github"
   link = "https://github.com/nicejade"
-  prefix = "fab"
-
-[[params.social]]
-  medium = "晚晴幽草轩"
-  icon = "blogger"
-  link = "https://www.jeffjade.com/"
-  prefix = "fab"
-
-[[params.social]]
-  medium = "静晴轩别苑"
-  icon = "blogger-b"
-  link = "https://nice.lovejade.cn/"
   prefix = "fab"
 
 [[params.social]]
@@ -48,7 +54,7 @@ theme = "aerial"
 [[params.social]]
   medium = "微信"
   icon = "weixin"
-  link = "https://www.jeffjade.com/nicelinks/#大前端联盟"
+  link = "https://www.jeffjade.com/nicelinks/#大前端联盟?utm_source=aboutme.lovejade.cn"
   prefix = "fab"
 
 [[params.social]]
@@ -79,10 +85,4 @@ theme = "aerial"
   medium = "Instagram"
   icon = "instagram"
   link = "https://www.instagram.com/jeffjade2/"
-  prefix = "fab"
-
-[[params.social]]
-  medium = "Dribbble"
-  icon = "dribbble"
-  link = "https://dribbble.com/nicejade"
   prefix = "fab"
